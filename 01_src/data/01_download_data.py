@@ -29,7 +29,7 @@ def move_files(source_folder, destination_folder):
         os.rmdir(source_folder)
 
 if __name__ == "__main__":
-    # Replace 'your_username' and 'your_dataset_name' with your Kaggle username and dataset name
+    # Replace with the kaggle link
     dataset_full_path = 'https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection'
 
     # Specify the folder for downloading
