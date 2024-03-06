@@ -1,3 +1,4 @@
 #Ignore directory
 07_config/secrets
 09_environments/venv
+01_src/data/kaggle.json
