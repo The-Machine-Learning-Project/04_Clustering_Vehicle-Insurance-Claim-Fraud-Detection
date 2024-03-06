@@ -16,10 +16,10 @@ response = requests.get(path)
 if response.status_code == 200:
 
     # Save the content to a local CSV file
-    with open('./02_data/01_raw/vehicle_insurance_data.csv', 'wb') as local_file:
+    with open('././02_data/01_raw/vehicle_insurance_data.csv', 'wb') as local_file:
         local_file.write(response.content)
     print('File downloaded successfully.')
-    
+
 else:
     print(f'Failed to download the file. Status code: {response.status_code}')
 
