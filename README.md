@@ -1,17 +1,18 @@
 # Vehicle Insurance Claim Fraud Detection
 
 ## Project Description
-> [Insert description here]
+> According to the Insurance Information Institute (III), insurance fraud is a deception committed against an insurance company for financial gain. It can be anything from lying about a garaging address (the location where your vehicle is parked for most of the year) to exaggerating an accident to outright staging one. Fraudulent claims are extremely difficult to detect causing immense losses on the part of the insurance company. <br>
+
+> This project delves into the application of clustering as a tool for anomaly detection in the insurance industry, aiming to address and mitigate the impact of such deceptive practices.
 
 ![Image Alt Text](10_images/cover.jpg)
 
 ## Project Coverage
-
-PART 1
-> ![](https://geps.dev/progress/100) [Add Coverage 1] <br>
-> ![](https://geps.dev/progress/100) [Add Coverage 2] <br>
-> ![](https://geps.dev/progress/100) [Add Coverage 3] <br>
-> ![](https://geps.dev/progress/0) [Add Coverage 4] <br>
+> ![](https://geps.dev/progress/100) [Data Download](https://github.com/The-Machine-Learning-Project/04_Clustering_Vehicle-Insurance-Claim-Fraud-Detection/blob/main/01_src/data/01_download_data.py) <br>
+> ![](https://geps.dev/progress/100) [Data Pre-Processing](https://github.com/The-Machine-Learning-Project/04_Clustering_Vehicle-Insurance-Claim-Fraud-Detection/blob/main/01_src/data/02_data_processing.ipynb) <br>
+> ![](https://geps.dev/progress/45) [Exploratory Data Analysis](https://github.com/The-Machine-Learning-Project/04_Clustering_Vehicle-Insurance-Claim-Fraud-Detection/blob/main/03_notebooks/01_exploratory_data_analysis.ipynb) <br>
+> ![](https://geps.dev/progress/0) [Feature Engineering] <br>
+> ![](https://geps.dev/progress/0) [Modelling] <br>
 
 ## Model
 > [Enumerate model used here]
@@ -19,10 +20,9 @@ PART 1
 ## Data Source
 > https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection
 
-## Installation
+## Setup
 Install all requirements by running the following command
-
-> pip install -r requirements.txt
+> pip install -r requirements.txt <br>
 
 ## Project Configurations
 
@@ -34,14 +34,21 @@ Install all requirements by running the following command
 ## Project Folder Structure
 ```text
 ├── ...
-├── 01_src  				# Source code
-│   ├── download_data.py
+├── 01_src  				# Source codes
+│   ├── data
+│   │   ├── 01_download_data.py
+│   │   └── 02_data_processing.ipynb
+│   ├── features
+│   ├── models
+│   └── visualization
 ├── 02_data
 │   ├── 01_raw  			# Raw data files
+│   │   └── fraud_oracle.csv
 │   ├── 02_processed 			# Processed data files
+│   │   └── fraud_oracle_processed.csv
 │   └── 03_external  			# Data from external sources
-├── 03_notebooks  			# Notebooks used for pre-processing, exploration, model training, etc 
-├── 03_src  				# Source code
+├── 03_notebooks  			# Notebooks used for pre-processing, exploration, model training, etc
+│   └── 01_exploratory_data_analysis.ipynb
 ├── 04_models  				# Trained model files, model metadata, and evaluation results
 ├── 05_deployment  			# Project deployment files
 ├── 06_reports  			# Project documentation, Jupyter Notebook reports, final reports, and presentations
